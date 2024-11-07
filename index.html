@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speedy Taxi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about-us">ABOUT US</a></li>
+            <li><a href="#pricing">PRICING</a></li>
+            <li><a href="#booking-system">BOOKING SYSTEM</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="homepage">
+      <div class="home-content">
+          <h1>BOOK A TAXI IN TIRANA</h1>
+          <p>+355 67 51 51 551</p>
+          <div class="home-buttons">
+              <a href="tel:+355675151551" class="btn">CALL NOW</a>
+              <a href="https://wa.me/355675151551" class="btn">MESSAGE NOW</a>
+          </div>
+      </div>
+  </section>
+
+  <section id="about-us" class="about-us-section">
+    <h1>ALB TAXI</h1>
+    <h2>What we offer?</h2>
+    
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>Airport Transfers for Solo and Group Travelers</h3>
+        </div>
+        <div class="feature-card">
+            <h3>Baggage Transport Included</h3>
+        </div>
+        <div class="feature-card">
+            <h3>Transfers to Any Destination in Albania</h3>
+        </div>
+        <div class="feature-card">
+            <h3>Competitive Pricing for All Services</h3>
+        </div>
+        <div class="feature-card">
+            <h3>Safety and Comfort Guaranteed</h3>
+        </div>
+        <div class="feature-card">
+            <h3>Highly Experienced Drivers</h3>
+        </div>
+        <div class="feature-card">
+            <h3>24/7 Availability for Your Convenience</h3>
+        </div>
+        <div class="feature-card">
+            <h3>On-Time Service with No Delays</h3>
+        </div>
+    </div>
+</section>
+
+
+<section id="pricing" class="pricing-section">
+    <h1>Pricing</h1>
+  
+    <!-- Box 1: Tirana International Airport to Tirana -->
+    <div class="pricing-item">
+      <div class="dropdown-header" onclick="toggleDropdown('pricing1')">
+        Tirana International Airport to Tirana
+        <span class="arrow">&#9660;</span>
+      </div>
+      <div id="pricing1" class="dropdown-content">
+        <p>Transfer from Tirana International Airport to Tirana city center (or vice versa) costs EUR 15.</p>
+      </div>
+    </div>
+  
+    <!-- Box 2: Transfers in Tirana -->
+    <div class="pricing-item">
+      <div class="dropdown-header" onclick="toggleDropdown('pricing2')">
+        Transfers in Tirana
+        <span class="arrow">&#9660;</span>
+      </div>
+      <div id="pricing2" class="dropdown-content">
+        <p>Transfers in Tirana vary based on the distance between your starting point and destination. Please inform us of your destination in advance, and we will provide you with a price estimate.</p>
+      </div>
+    </div>
+  
+    <!-- Box 3: Intercity Transfers -->
+    <div class="pricing-item">
+      <div class="dropdown-header" onclick="toggleDropdown('pricing3')">
+        Intercity Transfers
+        <span class="arrow">&#9660;</span>
+      </div>
+      <div id="pricing3" class="dropdown-content">
+        <div class="car-options">
+          <div onclick="showCityPrices('smallCarPrices')" class="car-option">Compact Car</div>
+          <div onclick="showCityPrices('avantCarPrices')" class="car-option">Station Wagon</div>
+          <div onclick="showCityPrices('suvCarPrices')" class="car-option">SUV</div>
+        </div>
+        <div id="smallCarPrices" class="car-prices" style="display:none;">
+          <p>Airport - Durrës EUR 30</p>
+          <p>Airport - Elbasan EUR 30</p>
+          <p>Airport - Vlorë EUR 75</p>
+          <p>Airport - Shkodër EUR 80</p>
+          <p>Airport - Berat EUR 80</p>
+          <p>Airport - Pogradec EUR 80</p>
+          <p>Airport - Korçë EUR 90</p>
+          <p>Airport - Sarandë EUR 110</p>
+          <p>Airport - Prizren EUR 110</p>
+          <p>Airport - Ksamil EUR 125</p>
+          <p>Airport - Prishtina EUR 135</p>
+          <br>
+          <p>If the city you want to go to is not listed, contact us and we will inform you about it.</p>
+        </div>
+        <div id="avantCarPrices" class="car-prices" style="display:none;">
+            <p>Airport - Durrës EUR 35</p>
+            <p>Airport - Elbasan EUR 35</p>
+            <p>Airport - Vlorë EUR 80</p>
+            <p>Airport - Shkodër EUR 85</p>
+            <p>Airport - Berat EUR 85</p>
+            <p>Airport - Pogradec EUR 85</p>
+            <p>Airport - Korçë EUR 95</p>
+            <p>Airport - Sarandë EUR 115</p>
+            <p>Airport - Prizren EUR 115</p>
+            <p>Airport - Ksamil EUR 130</p>
+            <p>Airport - Prishtina EUR 140</p>
+          <br>
+          <p>If the city you want to go to is not listed, contact us and we will inform you about it.</p>
+        </div>
+        <div id="suvCarPrices" class="car-prices" style="display:none;">
+            <p>Airport - Durrës EUR 40</p>
+            <p>Airport - Elbasan EUR 40</p>
+            <p>Airport - Vlorë EUR 85</p>
+            <p>Airport - Shkodër EUR 90</p>
+            <p>Airport - Berat EUR 90</p>
+            <p>Airport - Pogradec EUR 90</p>
+            <p>Airport - Korçë EUR 95</p>
+            <p>Airport - Sarandë EUR 120</p>
+            <p>Airport - Prizren EUR 120</p>
+            <p>Airport - Ksamil EUR 135</p>
+            <p>Airport - Prishtina EUR 145</p>
+          <br>
+          <p>If the city you want to go to is not listed, contact us and we will inform you about it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function toggleDropdown(id) {
+        const content = document.getElementById(id);
+        content.style.display = (content.style.display === "block") ? "none" : "block";
+    }
+  
+    function showCityPrices(id) {
+        // Hide all price lists
+        const prices = document.querySelectorAll('.car-prices');
+        prices.forEach(price => price.style.display = 'none');
+  
+        // Show the selected price list
+        document.getElementById(id).style.display = 'block';
+  
+        // Remove "active" class from all car options
+        const carOptions = document.querySelectorAll('.car-option');
+        carOptions.forEach(option => option.classList.remove('active'));
+  
+        // Add "active" class to the clicked car option
+        event.target.classList.add('active');
+    }
+  </script>
+  
+  
+
+
+
+
+<section id="booking-system" class="booking-system-section">
+  <div class="booking-container">
+      <div class="booking-text">
+          <h2>Book Your Ride Anytime, Anywhere!</h2>
+          <p>
+              With our 24/7 booking service, reserving your taxi is a breeze—just call or message us, 
+              and we’ll take care of the rest! Our dedicated team is committed to fulfilling all your 
+              requests, ensuring you enjoy a seamless and pleasant ride with us. Your satisfaction is our top priority!
+          </p>
+      </div>
+      <div class="booking-buttons">
+          <a href="tel:+355675151551" class="btn">CALL NOW</a>
+          <a href="https://wa.me/355675151551" class="btn">MESSAGE NOW</a>
+      </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-left">
+          <h3>Contact Us</h3>
+          <p>Phone: +355 67 51 51 551</p>
+          <p>Email: info@speedytaxi.al</p>
+          <p>Address: Rr. Haxhi H. Dalliu, Tirana, Albania</p>
+      </div>
+
+      <div class="footer-right">
+          <h3>Follow Us</h3>
+          <a href="#" class="social-icon">Facebook</a>
+          <a href="#" class="social-icon">Instagram</a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Speedy Taxi. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
